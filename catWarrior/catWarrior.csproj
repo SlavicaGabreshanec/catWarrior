@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bullets.cs" />
+    <Compile Include="DeadCatFamousMouses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeadCatFamousMouses.Designer.cs">
+      <DependentUpon>DeadCatFamousMouses.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,6 +61,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DeadCatFamousMouses.resx">
+      <DependentUpon>DeadCatFamousMouses.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -82,9 +91,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\napred.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\mouse_hole_bg.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -98,6 +104,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\mouse_levo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izgube.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cat_napredd.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
