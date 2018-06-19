@@ -113,7 +113,8 @@ namespace catWarrior
             shoot.direction = direct;
             shoot.bulletLeft = player.Left + (player.Width / 2);
             shoot.bulletTop = player.Top + (player.Height / 2);
-            shoot.mkBullet(this);
+            shoot.makeBullet(this);
+
         }
         //za dodavanje na povekje gluvchinja
         private void makeMouses()
@@ -247,5 +248,6 @@ namespace catWarrior
 
         }
 
+      
     }
 }
