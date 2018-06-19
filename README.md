@@ -129,7 +129,7 @@
         }
 ```
 Во новиот commit може да се види класата Bullets. Во неа имаме посебна функција која е за создавање на куршуми. Во продолжение кодот за оваа функција е објаснет со коментари.
-```
+```C#
 public void makeBullet(Form form)
         {
             Bullet.BackColor = System.Drawing.Color.Yellow; // postavuvanje na zolta boja za kurshumite
