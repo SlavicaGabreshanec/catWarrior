@@ -1,6 +1,6 @@
 ### Документација за проектот по Визуелно програмирање - Cat Warrior
 
-<p>Темата на проектот е едноставна игричка каде играчот на играта е маче борец кое живее во куќа полна со глувчиња. Веќе не бил способен да ги фаќа глувчињата, па затоа објавува војна. Целта е да не бидеме погодени од глувче. Почетниот изглед на игричката е во продолжение.</p>
+<p>Темата на проектот е едноставна игричка каде играчот на играта е маче борец кое живее во куќа полна со глувчиња. Веќе не бил способен да ги фаќа глувчињата, па затоа објавува војна. Целта е да не бидеме погодени од глувче. Кога муницијата се намали тогаш на екран се појавува муниција која може да ја земеме и продолжиме со бркање на глувчињата. Почетниот изглед на игричката е во продолжение.</p>
 
 ![catwarriorgame](https://user-images.githubusercontent.com/40269242/41558017-dbdc7044-733f-11e8-866b-5b27d89fc4b5.PNG)
 
@@ -127,3 +127,20 @@
            }
 
         }
+```
+Во новиот commit може да се види класата Bullets. Во неа имаме посебна функција која е за создавање на куршуми. Во продолжение кодот за оваа функција е објаснет со коментари.
+```C#
+public void makeBullet(Form form)
+        {
+            Bullet.BackColor = System.Drawing.Color.Yellow; // postavuvanje na zolta boja za kurshumite
+            Bullet.Size = new Size(5, 5); // golemina 5px na 5px
+            Bullet.Tag = "bullet"; // postavuvanje na tag-ot na bullet
+            Bullet.Left = bulletLeft; // set bullet left
+            Bullet.Top = bulletTop; // set bulet right
+            Bullet.BringToFront();
+            form.Controls.Add(Bullet); // dodavanje na Bullet na screen-ot
+            timer.Interval = speed; // postavuvanje na intervalot na timerot na brzinata
+            timer.Tick += new EventHandler(tm_Tick);
+            timer.Start(); // start the timer
+        }
+```
