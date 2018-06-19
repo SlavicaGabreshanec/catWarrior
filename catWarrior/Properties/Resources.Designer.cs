@@ -63,6 +63,16 @@ namespace catWarrior.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ammo_image {
+            get {
+                object obj = ResourceManager.GetObject("ammo_image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cat_desno {
             get {
                 object obj = ResourceManager.GetObject("cat_desno", resourceCulture);

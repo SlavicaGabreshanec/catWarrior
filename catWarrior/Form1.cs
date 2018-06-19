@@ -95,17 +95,37 @@ namespace catWarrior
         //ja povikuvame ovaa funkcija koga ni e potrebno povekje municija
         private void NeedMoreAmmunition()
         {
+            PictureBox ammo = new PictureBox(); // kreiranje instanca od PictureBox
+            ammo.Image = Properties.Resources.ammo_image; // postavuvanje na slikata vo PictureBox
+            ammo.SizeMode = PictureBoxSizeMode.StretchImage;
+            ammo.Left = r.Next(10, 890); // postavuvanje random na levo
+            ammo.Top = r.Next(50, 600); // postavuvanje random nagore
+            this.Controls.Add(ammo);
+            ammo.BringToFront();
+            player.BringToFront();
+
 
         }
         //koga puka igrachot se povikuva ovaa funkcija
         private void PlayerShoot(string direct)
         {
-
+            Bullets shoot = new Bullets();
+            shoot.direction = direct;
+            shoot.bulletLeft = player.Left + (player.Width / 2);
+            shoot.bulletTop = player.Top + (player.Height / 2);
+            shoot.mkBullet(this);
         }
         //za dodavanje na povekje gluvchinja
         private void makeMouses()
         {
-
+            PictureBox mouse = new PictureBox(); // kreiranje nov PictureBox 
+            mouse.Tag = "mouse"; // dodavanje tag 
+            mouse.Image = Properties.Resources.mouse_desno;
+            mouse.Left = r.Next(0, 900);
+            mouse.Top = r.Next(0,800);
+            mouse.SizeMode = PictureBoxSizeMode.StretchImage;
+            this.Controls.Add(mouse);
+            player.BringToFront();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
