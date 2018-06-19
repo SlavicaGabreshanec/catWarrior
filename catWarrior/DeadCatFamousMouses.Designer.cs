@@ -65,6 +65,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "DeadCatFamousMouses";
             this.Text = "DeadCatFamousMouses";
+            
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -124,8 +124,17 @@
   <data name="cat_desno" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cat_desno.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cat_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cat_down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="cat_levo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\catgun.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cat_top" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cat_top.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="heart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\heart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="izgube" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\izgube.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

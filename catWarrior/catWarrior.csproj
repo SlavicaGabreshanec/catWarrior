@@ -100,9 +100,6 @@
     <None Include="Resources\cat_desno.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\catgun.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\mouse_levo.png" />
   </ItemGroup>
   <ItemGroup>
@@ -113,6 +110,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ammo_image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catgun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cat_top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cat_down.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
